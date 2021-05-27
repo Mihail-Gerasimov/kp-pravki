@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>КП</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+
+<body>
+    <!-- modal -->
+    <!-- Button trigger modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header p-0">
+                    <button pt-0 pb-0 type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span class="pr-4" aria-hidden="true">Закрыть</span>
+          </button>
+                </div>
+                <div class="modal-body p-0">
+                    <div class="modal-body--content d-flex justify-content-between">
+                        <div class="modal-body--content__left">
+                            <h5 class="modal-title title-modal mb-3" id="staticBackdropLabel">Хочу заявки!</h5>
+                            <p class="modal-body__text">
+                                Для получения заявок, оставьте номер телефона и ваше имя. Наш менеджер расскажет вам все подробнее.
+                            </p>
+                            <form action="" class="d-flex flex-column mb-4">
+                                <input class="mb-4 pl-4 py-3 style-input" type="text" placeholder="Ваше Имя">
+                                <input class=" pl-4 py-3 style-input" type="text" placeholder="+7 (___) ___ - __ - __">
+                            </form>
+                            <label class="label-radio">
+                                <input type="checkbox" name="people-number " class="real-radio "> 
+                                <div class="custom-radio"><img src="./img/modal/chek.svg" alt=""></div>
+                                <p class="custom-radio--text">Согласие на обработку своих персональных данных</p>
+                            </label>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary bg-pink">Хочу заявки!</button>
+                            </div>
+                        </div>
+                        <div class="modal-body--content__right position-relative">
+                            <img src="./img/modal/girl.png" class="position-absolute" alt="">
+                            <div class="body--content__right--color bg-pink position-relative">
+                                <img src="./img/top/circles.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-thanks" style="display: none;">
+        <div class="modal-thanks__grey position-absolute"></div>
+        <div class="modal-thanks__content d-flex flex-column align-items-center justify-content-center">
+            <img class="mb-5" src="./img/modal/green.png" alt="">
+            <h5 class="modal-title title-modal mb-5 text-center" id="staticBackdropLabel">Заявка<br>отправлена
+            </h5>
+            <p class="thanks__content--text">
+                Мы получили вашу заявку.<br>Наш менеджер свяжится с вами.
+            </p>
+        </div>
+        <div class="modal-thanks__pink position-absolute bg-pink"></div>
+    </div>
+    <!-- modal -->
+    <section class="top">
+        <div class="container">
+            <div class="row w-100 mx-0">
+                <div class="digital d-flex flex-row flex-md-column align-items-center col-12 col-md-1 pr-5 pl-0">
+                    <img class="logo" src="./img/top/logo.png" alt="логотип">
+                    <img class="points" src="./img/top/points.png" alt="точки">
+                </div>
+                <div class="bacground-block col-12 col-md-10">
+                    <div class="sentence bg-pink overflow-hidden d-flex justify-content-between position-relative p-0">
+                        <div class="sentence-conten__left position-relative d-flex flex-column">
+                            <div class="square-small square-position--one position-absolute"></div>
+                            <h1 class=" title-sentence mb-4 mb-lg-5">Нужны <br>
+                                <span>качественные лиды</span><br>
+                                на потребительские кредиты и МФО?</h1>
+                            <p class="credit mb-3">Только горячие заявки, с базами не работаем</p>
+                            <p class="credit">Заявка всего от 100 рублей!</p>
+                            <button data-toggle="modal" data-target="#staticBackdrop" class="top-btn">Хочу заявки!</button>
+                        </div>
+                        <div class="sentence-conten__right position-relative justify-content-end align-items-end">
+                            <img class="circles position-absolute" src="./img/top/circles.png" alt="круги">
+                            <div class="scroll-position">
+                                <p class="scroll d-none d-sm-block">скроль в низ</p>
+                                <img class="mouse" src="./img/top/mouse.png" alt="">
+                            </div>
+                            <div class="square-small square-position--two position-absolute"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="points-right d-none d-md-flex col-md-1 pl-5 pr-0">
+                    <img class="points-two" src="./img/top/points-two.png" alt="точки">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="advantages">
+        <div class="container">
+
+            <h2 class="title-medium title-advantages">Преимущества</h2>
+            <div class="row mx-0 w-100 advantages-block">
+
+                <div class="advantages-block__item mx-auto">
+
+                    <div class="block__item--card">
+                        <div class="item--card__top d-flex align-items-center">
+                            <img class="item--card__top--images" src="./img/advantages/finger.png" alt="рука">
+                            <h4 class="item--card__title">Генерируем от 30 до 3 000 заявок в день </h4>
+                        </div>
+                        <p class="item--card__information">Работаем со множество городами партнерами и приводим в каждый из них от 30 до 3 000 качественных заявок в сутки.</p>
+                    </div>
+
+                    <div class="block__item--card">
+                        <div class="item--card__top d-flex align-items-center">
+                            <img class="item--card__top--images" src="./img/advantages/crm.png" alt="система">
+                            <h4 class="item--card__title">CRM система в подарок</h4>
+                        </div>
+                        <p class="item--card__information">Подключаем каждого клиента к CRM системе, где осуществляется прием заявок online (в реальном времени)</p>
+                    </div>
+
+                </div>
+                <div class="advantages-block__item mx-auto">
+
+                    <div class="block__item--card">
+                        <div class="item--card__top d-flex align-items-center">
+                            <img class="item--card__top--images" src="./img/advantages/swap.png" alt="замена">
+                            <h4 class="item--card__title">Бесплатная замена некачественных заявок</h4>
+                        </div>
+                        <p class="item--card__information">Возвращаяем некачественные заявки, если у вас попался (другой регион, неактуальное заявка и спам) </p>
+                    </div>
+
+                    <div class="block__item--card">
+                        <div class="item--card__top d-flex align-items-center">
+                            <img class="item--card__top--images" src="./img/advantages/site.png" alt="сайт">
+                            <h4 class="item--card__title">Используем свои сайты</h4>
+                        </div>
+                        <p class="item--card__information">У нас уже рабочие готовые сайты, от вас требуется только телефон и почта.</p>
+                    </div>
+
+                </div>
+                <div class="advantages-block__item mx-auto">
+
+                    <div class="block__item--card ">
+                        <div class="item--card__top d-flex align-items-center">
+                            <img class="item--card__top--images" src="./img/advantages/application.png" alt="стоимость">
+                            <h4 class="item--card__title">Фиксированная стоимость заявки</h4>
+                        </div>
+                        <p class="item--card__information">Наши заявки приносят от 30 до 50% встреч от количества лидов.</p>
+                    </div>
+
+                    <button class="btn-medium bg-pink p-0" data-toggle="modal" data-target="#staticBackdrop">Хочу заявки!</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="sent">
+        <div class="container">
+            <h2 class="title-medium title-advantages">Мы предлагаем</h2>
+            <div class="sentence-block d-flex align-items-start align-items-sm-center align-items-md-start flex-md-row flex-column">
+                <div class="sentence-child mb-5 mb-md-0">
+                    <p class="sentence-child__text mb-4">Заявки на потребительские <br> кредиты <span>от 115 руб/лид</span></p>
+                    <ul class="centence-list mb-4 mb-lg-5">
+                        <li class="sentence-list__item mb-3">Суммы от 100 тыс до 15 млн руб.</li>
+                        <li class="sentence-list__item mb-3">Горячий онлайн трафик</li>
+                        <li class="sentence-list__item mb-3">Заявки в одни руки</li>
+                        <li class="sentence-list__item mb-3">Конверсия приходов в офис от 35%</li>
+                        <li class="sentence-list__item mb-3">CRM - система в подарок</li>
+                        <li class="sentence-list__item mb-3">Используем свои сайты</li>
+                        <li class="sentence-list__item">Работаем по вашему региону и по РФ</li>
+                    </ul>
+                    <button class="sentence-btn">Хочу потребы</button>
+                </div>
+
+                <div class="sentence-child">
+                    <p class="sentence-child__text mb-4">Заявки на микрофинансовые <br>организации <span>от 100 руб/лид</span></p>
+                    <ul class="centence-list mb-4 mb-lg-5">
+                        <li class="sentence-list__item mb-3">Суммы от 1000 до 100 000 руб.</li>
+                        <li class="sentence-list__item mb-3">Горячий онлайн трафик</li>
+                        <li class="sentence-list__item mb-3">Заявки в одни руки</li>
+                        <li class="sentence-list__item mb-3">Конверсия приходов в офис от 35%</li>
+                        <li class="sentence-list__item mb-3">CRM - система в подарок</li>
+                        <li class="sentence-list__item mb-3">Используем свои сайты</li>
+                        <li class="sentence-list__item">Работаем по вашему региону и по РФ</li>
+                    </ul>
+                    <button class="sentence-btn">Хочу потребы</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cases position-relative">
+
+        <div class="container">
+            <h2 class="title-cases position-absolute">
+                Наши кейсы
+            </h2>
+            <h2 class="title-medium d-block d-lg-none title-cases__mobile">
+                Наши кейсы
+            </h2>
+            <div class="cases-block d-flex justify-content-between">
+                <div class="block__cities">
+                    <h4 class="cities-title">г. Казань</h4>
+                    <div class="applications-per-month mb-lg-4 mb-xl-5 d-flex flex-column">
+                        <h2 class="title-medium per-month_title">1573</h2>
+                        <p class="applications-per-month__item">заявки в месяц</p>
+                    </div>
+                    <div class="ruble mb-3 d-flex flex-column">
+                        <h2 class="title-medium per-month_title">797</h2>
+                        <p class="ruble__text">приходов в офис для нашего клиента</p>
+                    </div>
+                </div>
+                <div class="block-statistics">
+                    <img class="block-statistics__calibri" src="./img/cases/callibri-one.png" alt="">
+                    <img src="./img/cases/conversions-one.png" alt="">
+                </div>
+            </div>
+
+            <div class="cases-block d-flex justify-content-between">
+                <div class="block__cities">
+                    <h4 class="cities-title">г. Санкт-петербург</h4>
+                    <div class="applications-per-month mb-lg-4 mb-xl-5 d-flex flex-column">
+                        <h2 class="title-medium per-month_title">2380</h2>
+                        <p class="applications-per-month__item">заявки в месяц</p>
+                    </div>
+                    <div class="ruble mb-3 d-flex flex-column">
+                        <h2 class="title-medium per-month_title">952</h2>
+                        <p class="ruble__text">прихода в офис для нашего клиента</p>
+                    </div>
+                </div>
+                <div class="block-statistics">
+                    <img class="block-statistics__calibri" src="./img/cases/callibri-two.png" alt="">
+                    <img src="./img/cases/conversions-two.png" alt="">
+                </div>
+            </div>
+
+            <div class="cases-block d-flex justify-content-between">
+                <div class="block__cities">
+                    <h4 class="cities-title">г. Уфа</h4>
+                    <div class="applications-per-month mb-lg-4 mb-xl-5 d-flex flex-column">
+                        <h2 class="title-medium per-month_title">1942</h2>
+                        <p class="applications-per-month__item">заявки в месяц</p>
+                    </div>
+                    <div class="ruble mb-3 d-flex flex-column">
+                        <h2 class="title-medium per-month_title">874</h2>
+                        <p class="ruble__text">прихода в офис для нашего клиента</p>
+                    </div>
+                </div>
+                <div class="block-statistics">
+                    <img class="block-statistics__calibri" src="./img/cases/callibri-three.png" alt="">
+                    <img src="./img/cases/conversions-three.png" alt="">
+                </div>
+            </div>
+
+            <div class="cases-block d-flex justify-content-between">
+                <div class="block__cities">
+                    <h4 class="cities-title">г. Тюмень</h4>
+                    <div class="applications-per-month mb-lg-4 mb-xl-5 d-flex flex-column">
+                        <h2 class="title-medium per-month_title">1045</h2>
+                        <p class="applications-per-month__item">заявки в месяц</p>
+                    </div>
+                    <div class="ruble mb-3 d-flex flex-column">
+                        <h2 class="title-medium per-month_title">353</h2>
+                        <p class="ruble__text">прихода в офис для нашего клиента</p>
+                    </div>
+                </div>
+                <div class="block-statistics">
+                    <img class="block-statistics__calibri" src="./img/cases/callibri-four.png" alt="">
+                    <img src="./img/cases/conversions-four.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="description">
+        <div class="row mx-0 w-100 bias">
+            <div class="description-block position-relative">
+                <h2 class="title-medium title-description">О нас</h2>
+                <p class="description-text">
+                    L-Digital. Уже больше 5 лет мы работаем с Кредитными брокерами по всей России и создали и протестировали 10-ки сайтов и помогли заказчикам выделиться среди конкурентов и повысить окупаемость инвестиций в рекламу на 1000%.
+                    <br><br> Повышаем продажи и приводим тех клиентов, которые готовы покупать.
+                </p>
+                <img class="payback-position position-absolute" src="./img/description/peoples.png" alt="">
+            </div>
+            <div class="payback w-100 d-flex">
+                <img class="payback-face" src="./img/description/face.png" alt="лица">
+                <h3 class="d-flex justify-content-center title-payback bg-pink">Окупаемость<br>на 1000%</h3>
+            </div>
+        </div>
+    </section>
+    <section class="tages">
+        <div class="container">
+
+            <h2 class="title-medium title-advantages">Как мы работаем</h2>
+            <div class="row mx-0 w-100 advantages-block">
+
+                <div class="advantages-block__item mx-auto">
+
+                    <div class="block__item--card">
+                        <div class="item--card__top d-flex align-items-start mb-lg-0 mb-2">
+                            <img class="item--card__top--images" src="./img/tages/preparation.png " alt="рука">
+                            <h4 class="item--card__title">Подготовка к работе</h4>
+                        </div>
+                        <p class="item--card__information">Настраиваем сайт для вашего города, подключаем систему аналитики</p>
+                    </div>
+
+                    <div class="block__item--card">
+                        <div class="item--card__top d-flex align-items-start mb-lg-0 mb-2">
+                            <img class="item--card__top--images" src="./img/tages/testing.png" alt="система">
+                            <h4 class="item--card__title">Тестирование и проверка</h4>
+                        </div>
+                        <p class="item--card__information">Проверяем, чтобы работали все кнопки, формы заявок и SRM система</p>
+                    </div>
+
+                </div>
+                <div class="advantages-block__item mx-auto">
+                    <div class="block__item--card">
+                        <div class="item--card__top d-flex align-items-start mb-lg-0 mb-2">
+                            <img class="item--card__top--images" src="./img/tages/crm.png" alt="замена">
+                            <h4 class="item--card__title">Подключаем CRM систему</h4>
+                        </div>
+                        <p class="item--card__information">Подключаем CRM систему и выдаем доступ заказчику, проводим инструктаж по работе</p>
+                    </div>
+
+                    <div class="block__item--card">
+                        <div class="item--card__top d-flex align-items-start mb-lg-0 mb-2">
+                            <img class="item--card__top--images" src="./img/tages/traffic.png" alt="сайт">
+                            <h4 class="item--card__title">Запускаем трафик</h4>
+                        </div>
+                        <p class="item--card__information">Трафик запущен и идут заявки</p>
+                    </div>
+
+                </div>
+                <div class="advantages-block__item mx-auto">
+
+                    <div class="block__item--card ">
+                        <div class="item--card__top d-flex align-items-start mb-lg-0 mb-2">
+                            <img class="item--card__top--images" src="./img/tages/castomization.png" alt="стоимость">
+                            <h4 class="item--card__title">Настраиваем рекламу</h4>
+                        </div>
+                        <p class="item--card__information">Настройка рекламных площадок Яндекс Директ, Google Adwords, Facebook и Instagram в соответствии с Вашим ГЕО работы</p>
+                    </div>
+
+                    <button class="btn-medium bg-pink p-0 " data-toggle="modal" data-target="#staticBackdrop">Хочу заявки!</button>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <section class="important">
+        <div class="row w-100 mx-0">
+            <div class="important-block mx-auto flex-column flex-lg-row  d-flex px-2 px-lg-3">
+                <div class="important-thanks">
+                    <div class="important-thanks__links">
+                        <a class="links--item" href="tel:88005002207">8 800 500 22 07</a>
+                        <a class="links--item" href="https://ldigital.ru/" target="_blanck">Ldigital.ru</a>
+                    </div>
+                    <h2 class="title-medium title-important">Спасибо<br>за внимание!</h2>
+                    <p class="important-information">Просто свяжитесь с нами удобным для Вас способом, и наш менеджер с удовольствием ответит на ваши вопросы.</p>
+                    <div class="important-social d-flex">
+                        <a class="#" href=""><img class="important-social__networks" src="./img/important/whats-app.svg" alt="whats-app"></a>
+                        <a class="#" href=""><img class="important-social__networks" src="./img/important/viber.svg" alt="viber"></a>
+                        <a class="d-flex " href="#"><img class="important-social__networks" src="./img/important/telegramm.svg" alt="telegramm"></a>
+                    </div>
+                    <div class="important-thanks__links d-flex d-lg-none flex-column">
+                        <a class="links--item__mobile mb-4" href="tel:88005002207">8 800 500 22 07</a>
+                        <a class="links--item__mobile" href="https://ldigital.ru/" target="_blanck">Ldigital.ru</a>
+                    </div>
+                </div>
+                <div class="important-partner d-flex flex-column align-items-center">
+                    <img class="mb-3 mb-md-4" src="./img/important/sing.png" alt="знак">
+                    <h3 class="important-partner__title">Важно</h3>
+                    <p class="important-partner__text">Мы берем <span>только одного партнера</span> в вашем регионе и <span>не работаем с конкурентами</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="contaiener bg-pink">
+            <p class="footer-text">Просто свяжитесь с нами удобным для Вас способом, и наш менеджер с удовольствием ответит на ваши вопросы.</p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous">
+    </script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
